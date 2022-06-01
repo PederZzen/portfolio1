@@ -6,12 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <script src="./js/script.js" defer></script>
 
     <title>Espen Pedersen</title>
 </head>
 <body>
-    
+    <header>
+        <h1 id="logo">Espen Pedersen</h1>
+        <nav>
+            <button id="about__btn">About</button>
+            <button id="projects__btn">Projects</button>
+            <button id="contact__btn">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Lets make the web more fun</h2>
+            <h3>Scroll down to meet Espen</h3>
+            <img src="./media/hero-computer.svg" alt="Illustration of a computer and some books">
+        </section>
+
+        <section id="about">
+            <img src="./media/picture-of-espen.JPG" alt="A picture of Espen">
+            <img src="./media/this-guy-arrow.svg" alt="An arrow">
+            <img src="./media/this-guy!.svg" alt="This guy!">
+
+            <div id="about__text">
+                <h2>Who am i?</h2>
+                <p>Hi my name is Espen, and i am a Web developer from Norway. I am passionate about creating beautiful and responsive solutions for the web.</p>
+                <p>Currently i am getting my degree in Front-end Development at Noroff School of Technology and Design, in Bergen.</p>
+            </div>
+        </section>
+
+        <section id="my-work">
+            <div id="project-modal__container"></div>
+            <img src="./media/my-work-watermark.svg" alt="My work text">
+            <h2>My work</h2>
+            <div id="projects">
+                <div class="projects__card">
+                    <div class="projects__card__content">
+                        <h3>Helt På Bærtur</h3>
+                        <p>This was the school exam for the first year at Noroff. The task was to create a blog about a topic of our own choosing, and give it life using HTML, CSS and JavaScript only. </p>
+                        <p>I chose to make a blog about something i feel passionate about, and that is everything outdoorsy.</p>
+                        <button class="read-more__btn">Read More</button>                        
+                    </div>
+                    <img src="#" alt="Helt på Bærtur webpage overview">
+                </div>
+                <div class="projects__card">
+                    <div class="projects__card__content">
+                        <h3>Community Science Museum</h3>
+                        <p>This was the final project on the first term at Noroff. We were to create the website for a museum, using HTML and CSS. </p>
+                        <p>I learned alot about the foundations of web-creation during this project.</p>
+                        <button class="read-more__btn">Read More</button>
+                    </div>
+                    <img src="#" alt="Community science museum website overview">
+                </div>
+                <div class="projects__card">
+                    <div class="projects__card__content">
+                        <h3>RainyDays</h3>
+                        <p>An online store, specialized in selling high quality rain jackets. This was the first big project at Noroff. I learned alot in regards to design during this project. </p>
+                        <p>This is where the journey began!</p>
+                        <button class="read-more__btn">Read More</button>
+                    </div>
+                    <img src="#" alt="RainyDays website overview">
+                </div>
+            </div>
+        </section>
+
+        <section id="my-skillz">
+            <h2>My Skillz</h2>
+            <img src="./media/thus-far.svg" alt="Thus far...">
+            <div class="skillz-card">
+                <h3>Front-end Development</h3>
+                <h4>HTML</h4>
+                <h4>CSS</h4>
+                <h4>JavaScript</h4>
+                <h4>WordPress</h4>
+                <img src="./media/skillz-card-front-end.svg" alt="HTML logo">
+            </div>
+            <div class="skillz-card">
+                <h3>UI/ UX</h3>
+                <h4>Figma</h4>
+                <h4>PhotoShop</h4>
+                <h4>Adobe XD</h4>
+                <img src="./media/skillz-card-ui.svg" alt="PhotoShop logo">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>&#9400; All Rights Reserved</h4>
+    </footer>
 </body>
 </html>
