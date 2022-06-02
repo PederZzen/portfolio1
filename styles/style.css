@@ -1,10 +1,112 @@
+:root {
+    --orange: #d88b33;
+    --pink: #D64E7A;
+    --blueDark: #506cbc;
+    --blueLight: #7693e7;
+    --purple: #441d4f;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
     background: whitesmoke;
+}
+
+.max-width {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main {
+    overflow: hidden;
+}
+
+/* ----------------------------- Header ----------------------------------- */
+
+header {
+    position: relative;
+    padding: 2rem 0;
+}
+
+#logo {
+    color: var(--orange);
+    font-size: 1.4rem;
+    position: absolute;
+    top: .5rem;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: .5rem;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    margin: 0 .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--purple);
+    cursor: pointer;
+}
+
+/* --------------------------------- Hero ------------------------------------ */
+
+#hero {
+    position: relative;
+    height: 90vh;
+}
+
+#hero > * {
+    position: absolute;
+}
+
+#hero__text {
+    top: 8rem;
+    left: 5rem;
+    color: var(--purple);
+}
+
+#hero__text::after {
+    content: '';
+    height: .5rem;
+    width: .5rem;
+    background-color: var(--orange);
+    position: absolute;
+    border-radius: 50%;
+    right: 3.3rem;
+    top: 7.35rem;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    width: 25rem;
+}
+
+#hero__dots {
+    top: 6rem;
+    left: 2rem;
+}
+
+#hero__computer {
+    right: -12rem;
+    bottom: 2rem;
+    width: 45rem;
+}
+
+#hero__bracket1 {
+    right: 30rem;
+}
+
+#hero__bracket2 {
+    transform: rotate(180deg);
+    right: 0;
+    bottom: -12rem;
 }
