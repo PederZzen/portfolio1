@@ -4,6 +4,7 @@
     --blueDark: #506cbc;
     --blueLight: #7693e7;
     --purple: #441d4f;
+    --white: #F5F5F5;
 }
 
 * {
@@ -15,21 +16,112 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: whitesmoke;
+    background: var(--white);
+    min-width: 300px;
 }
 
 .max-width {
     margin: 0 auto;
     max-width: 1200px;
+    padding: 0 0.5rem;
 }
 
 main {
     overflow: hidden;
 }
 
+/* Mobile first */
+
 /* ----------------------------- Header ----------------------------------- */
 
 header {
+    /* position: fixed; */
+    height: 4rem;
+    z-index: 1;
+}
+
+#navbar {
+    position: relative;
+}
+
+#navbar > * {
+    position: absolute;
+}
+
+#logo {
+    color: var(--orange);
+    font-size: 1.5rem;
+    top: .5rem;
+    left: .5rem;
+}
+
+nav {
+    top: 0;
+    transform: translateX(-100%);
+    background: url(../media/menu-background.svg) bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    padding: 5rem 0;
+    z-index: 1;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    color: var(--orange);
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+#hamburger {
+    right: 0.5rem;
+    top: 1rem;
+    width: 2rem;
+}
+
+#close-menu {
+    right: 0.5rem;
+    top: .5rem;
+    display: none;
+    z-index: 2;
+    width: 1.8rem;
+}
+
+.show-menu {
+    transform: translateY(0);
+}
+
+
+/* ----------------------------- Hero ----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header {
     position: relative;
     padding: 2rem 0;
 }
@@ -39,12 +131,13 @@ header {
     font-size: 1.4rem;
     position: absolute;
     top: .5rem;
+    left: 2rem;
 }
 
 nav {
     position: absolute;
-    right: 0;
-    top: .5rem;
+    right: 2rem;
+    top: 1rem;
 }
 
 nav button {
@@ -52,14 +145,14 @@ nav button {
     border: none;
     margin: 0 .5rem;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 800;
     color: var(--purple);
     cursor: pointer;
-}
+} */
 
 /* --------------------------------- Hero ------------------------------------ */
 
-#hero {
+/* #hero {
     position: relative;
     height: 90vh;
 }
@@ -97,7 +190,7 @@ nav button {
 
 #hero__computer {
     right: -12rem;
-    bottom: 2rem;
+    top: 7rem;
     width: 45rem;
 }
 
@@ -109,4 +202,69 @@ nav button {
     transform: rotate(180deg);
     right: 0;
     bottom: -12rem;
+} */
+
+/* --------------------------------- About ------------------------------------ */
+/* 
+#about {
+    background: url(../media/about-background.svg) no-repeat;
+    background-size: cover;
+    height: 130vh;
 }
+
+#about__content {
+    position: relative;
+    height: 100%;
+}
+
+#about__content > * {
+    position: absolute;
+}
+
+#about__img {
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+#my-face {
+    width: 30rem;
+    border-radius: 50%;
+}
+
+#this-guy__arrow {
+    left: 23rem;
+    top: 3rem;
+    position: absolute;
+}
+
+#this-guy {
+    position: absolute;
+    top: 2rem;
+    left: 32rem;
+}
+
+#about__text {
+    color: var(--white);
+    top: 40%;
+    right: 2rem;
+    width: 35rem;
+}
+
+#about__text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#about__text h2::after {
+    content: '';
+    background-color: var(--orange);
+    height: .35rem;
+    width: 4rem;
+    border-radius: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+} */

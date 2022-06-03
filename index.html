@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
 
     <script src="./js/script.js" defer></script>
 
     <title>Espen Pedersen</title>
 </head>
 <body>
-    <header class="max-width">
-        <h1 id="logo">Espen Pedersen</h1>
-        <nav>
-            <button id="about__btn">About</button>
-            <button id="projects__btn">Projects</button>
-            <button id="contact__btn">Contact</button>
-        </nav>
+    <header>
+        <section id="navbar">
+            <h1 id="logo">Espen Pedersen</h1>
+            <img src="./media/hamburger.svg" id="hamburger" alt="Menu icon">
+            <img src="./media/hamburger__close.svg" id="close-menu" alt="Menu icon close">
+            <nav>
+                <button id="about__btn">About</button>
+                <button id="projects__btn">Projects</button>
+                <button id="contact__btn">Contact</button>
+            </nav>
+        </section>
     </header>
 
     <main>
@@ -35,14 +39,18 @@
         </section>
 
         <section id="about">
-            <img src="./media/picture-of-espen.JPG" alt="A picture of Espen">
-            <img src="./media/this-guy-arrow.svg" alt="An arrow">
-            <img src="./media/this-guy!.svg" alt="This guy!">
+            <div id="about__content" class="max-width">
+                <div id="about__img">
+                    <img src="./media/picture-of-espen.JPG" id="my-face" alt="A picture of Espen">
+                    <img src="./media/this-guy-arrow.svg" id="this-guy__arrow" alt="An arrow">
+                    <img src="./media/this-guy!.svg" id="this-guy" alt="This guy!">
+                </div>
 
-            <div id="about__text">
-                <h2>Who am i?</h2>
-                <p>Hi my name is Espen, and i am a Web developer from Norway. I am passionate about creating beautiful and responsive solutions for the web.</p>
-                <p>Currently i am getting my degree in Front-end Development at Noroff School of Technology and Design, in Bergen.</p>
+                <div id="about__text">
+                    <h2>Who am i?</h2>
+                    <p>Hi my name is Espen, and i am a Web developer from Norway. I am passionate about creating beautiful and responsive solutions for the web.</p>
+                    <p>Currently i am getting my degree in Front-end Development at Noroff School of Technology and Design, in Bergen.</p>
+                </div>
             </div>
         </section>
 
