@@ -4,6 +4,7 @@
     --blueDark: #506cbc;
     --blueLight: #7693e7;
     --purple: #441d4f;
+    --purpleDark: #3a1943;
     --white: #F5F5F5;
 }
 
@@ -18,6 +19,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background: var(--white);
     min-width: 300px;
+}
+
+p {
+    padding: .5rem 0;
 }
 
 .max-width {
@@ -98,63 +103,10 @@ nav button {
 
 /* ----------------------------- Hero ----------------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* header {
-    position: relative;
-    padding: 2rem 0;
-}
-
-#logo {
-    color: var(--orange);
-    font-size: 1.4rem;
-    position: absolute;
-    top: .5rem;
-    left: 2rem;
-}
-
-nav {
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-}
-
-nav button {
-    background: transparent;
-    border: none;
-    margin: 0 .5rem;
-    font-size: 1rem;
-    font-weight: 800;
-    color: var(--purple);
-    cursor: pointer;
-} */
-
-/* --------------------------------- Hero ------------------------------------ */
-
-/* #hero {
+#hero {
     position: relative;
     height: 90vh;
+    color: var(--purple);
 }
 
 #hero > * {
@@ -162,109 +114,122 @@ nav button {
 }
 
 #hero__text {
-    top: 8rem;
-    left: 5rem;
-    color: var(--purple);
+    top: 20%;
+    left: 10%;
 }
 
-#hero__text::after {
-    content: '';
-    height: .5rem;
-    width: .5rem;
-    background-color: var(--orange);
-    position: absolute;
-    border-radius: 50%;
-    right: 3.3rem;
-    top: 7.35rem;
+#hero__text h2 {
+    font-size: 2rem;
+    width: 16rem;
 }
 
-#hero h2 {
-    font-size: 3rem;
-    width: 25rem;
-}
-
-#hero__dots {
-    top: 6rem;
-    left: 2rem;
+#orange-dot {
+    color: var(--orange);
 }
 
 #hero__computer {
-    right: -12rem;
-    top: 7rem;
-    width: 45rem;
+    width: 110%;
+    max-width: 35rem;
+    right: -25%;
+    top: 50%;
 }
 
-#hero__bracket1 {
-    right: 30rem;
+#hero__dots {
+    top: 10%;
+    left: 2%;
 }
 
-#hero__bracket2 {
-    transform: rotate(180deg);
-    right: 0;
-    bottom: -12rem;
-} */
+.hero__bracket {
+    display: none;
+}
 
-/* --------------------------------- About ------------------------------------ */
-/* 
+/* ----------------------------- About ----------------------------------- */
+
 #about {
-    background: url(../media/about-background.svg) no-repeat;
-    background-size: cover;
-    height: 130vh;
+    background: var(--purple);
+    margin-top: 5rem;
+    position: relative;
+}
+
+#about::before,
+#about::after {
+    content: '';
+    background: var(--purple);
+    opacity: .8;
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+}
+
+#about::before {
+    top: -2rem;
 }
 
 #about__content {
-    position: relative;
-    height: 100%;
-}
-
-#about__content > * {
-    position: absolute;
-}
-
-#about__img {
-    top: 50%;
-    left: 2rem;
-    transform: translateY(-50%);
-    position: relative;
-}
-
-#my-face {
-    width: 30rem;
-    border-radius: 50%;
-}
-
-#this-guy__arrow {
-    left: 23rem;
-    top: 3rem;
-    position: absolute;
-}
-
-#this-guy {
-    position: absolute;
-    top: 2rem;
-    left: 32rem;
+    padding: 5rem .5rem;
 }
 
 #about__text {
     color: var(--white);
-    top: 40%;
-    right: 2rem;
-    width: 35rem;
+    margin-bottom: 10rem;
+    max-width: 35rem;
 }
 
 #about__text h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
-#about__text h2::after {
+#about__text h2::after,
+#my-work h2::after {
     content: '';
-    background-color: var(--orange);
-    height: .35rem;
+    background: var(--orange);
     width: 4rem;
+    height: .4rem;
     border-radius: 2rem;
     position: absolute;
     left: 0;
-    bottom: -0.3rem;
-} */
+    bottom: -0.5rem;
+}
+
+#about__img {
+    position: relative;
+}
+
+#my-face {
+    width: 80%;
+    max-width: 20rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: .5rem .5rem var(--purpleDark);
+
+}
+
+#this-guy {
+    position: absolute;
+    width: 10rem;
+    right: 5%;
+    top: -4rem;
+}
+
+/* ----------------------------- My Work ----------------------------------- */
+
+#my-work {
+    margin-top: 18rem;
+    position: relative;
+}
+
+#my-work__watermark {
+    position: absolute;
+    left: -20%;
+    top: -5rem;
+    height: 10rem;
+}
+
+#my-work h2 {
+    margin-bottom: 10rem;
+    color: var(--purple);
+    font-size: 2rem;
+    position: relative;
+}
