@@ -54,6 +54,14 @@ main {
     bottom: -0.5rem;
 }
 
+.watermark {
+    position: absolute;
+    right: -10%;
+    top: -5rem;
+    width: 120%;
+    min-width: 35rem;
+}
+
 /* Mobile first */
 
 /* ----------------------------- Header ----------------------------------- */
@@ -74,7 +82,7 @@ header {
     position: absolute;
 }
 
-#logo {
+.logo {
     color: var(--orange);
     font-size: 1.5rem;
     top: .5rem;
@@ -233,15 +241,6 @@ footer::after {
     position: relative;
 }
 
-#my-work__watermark,
-#my-skillz__watermark {
-    position: absolute;
-    right: -10%;
-    top: -5rem;
-    width: 120%;
-    min-width: 35rem;
-}
-
 .projects__card__content {
     margin-bottom: 5rem;
 }
@@ -314,6 +313,63 @@ footer::after {
     right: 1rem;
     top: 12rem;
 }
+
+/* ----------------------------- Project Page ----------------------------------- */
+
+.return {
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: 700;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+.project-page main {
+    position: relative;
+}
+
+.project-page .watermark {
+    top: 3rem;
+    min-width: 50rem;
+    left: -10%;
+}
+
+.project-page h1 {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.project-page__copy {
+    margin: 4rem 0;
+    font-size: 1.1rem;
+    max-width: 35rem;
+}
+
+.project__image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project-page ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.project-page li {
+    margin: 0 2rem 3rem 0 ;
+}
+
+.icons {
+    margin: 3rem 0;
+}
+
+.icons > * {
+    margin-right: 1.5rem;
+}
+
 
 /* ----------------------------- Footer ----------------------------------- */
 
