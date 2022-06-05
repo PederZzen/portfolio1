@@ -54,11 +54,11 @@ main {
     bottom: -0.5rem;
 }
 
-.watermark {
+#index .watermark {
+    width: 120%;
     position: absolute;
     right: -10%;
     top: -5rem;
-    width: 120%;
     min-width: 35rem;
 }
 
@@ -87,6 +87,11 @@ header {
     font-size: 1.5rem;
     top: .5rem;
     left: .5rem;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-decoration: none;
+
 }
 
 nav {
@@ -149,10 +154,14 @@ nav button {
     left: 10%;
 }
 
-#hero__text h2 {
-    font-size: 2.2rem;
+#hero__text h1 {
+    font-size: 2.5rem;
     width: 19rem;
     margin: 0;
+}
+
+#hero__text h2 {
+    font-size: 1rem;
 }
 
 #orange-dot {
@@ -167,7 +176,7 @@ nav button {
 }
 
 #hero__dots {
-    top: 12%;
+    top: 15%;
     left: 2%;
 }
 
@@ -224,7 +233,6 @@ footer::after {
     margin: 0 auto;
     display: block;
     box-shadow: .5rem .5rem var(--purpleDark);
-
 }
 
 #this-guy {
@@ -241,16 +249,16 @@ footer::after {
     position: relative;
 }
 
-.projects__card__content {
+.projects__card {
     margin-bottom: 5rem;
 }
 
-.projects__card__content p {
+.projects__card p {
     color: #575757;
     font-size: 1.1rem;
 }
 
-.projects__card__content h3 {
+.projects__card h3 {
     margin-top: 1.5rem;
     font-size: 1.5rem;
     color: var(--purple);
@@ -271,68 +279,13 @@ footer::after {
     box-shadow: .3rem .3rem var(--purple);
     display: inline-block;
     text-decoration: none;
-}
-
-/* ----------------------------- My Work ----------------------------------- */
-
-#my-skillz {
-    margin-top: 10rem;
-    position: relative;
-}
-
-.skillz-card {
-    background: var(--purpleLight);
-    padding: 2rem;
-    border-radius: 2rem;
-    box-shadow: .3rem .3rem var(--purple);
-    margin: 3rem 0;
-    color: var(--purple);
-    font-size: 1.3rem;
-    position: relative;
-    height: 30rem;
-}
-
-.skillz-card h3 {
-    font-size: 1.5rem;
-    margin: 2rem 0;
-    position: relative;
-}
-
-.skillz-card .underline::after {
-    background: var(--pink);
-    height: .3rem;
-    width: 3rem;
-}
-
-.skillz-card h4 {
-    padding: .5rem 0;
-}
-
-.skillz-card__watermark {
-    position: absolute;
-    right: 1rem;
-    top: 12rem;
+    transition: .3s;
 }
 
 /* ----------------------------- Project Page ----------------------------------- */
 
-.return {
-    text-decoration: none;
-    color: var(--orange);
-    font-weight: 700;
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.6rem;
-}
-
 .project-page main {
     position: relative;
-}
-
-.project-page .watermark {
-    top: 3rem;
-    min-width: 50rem;
-    left: -10%;
 }
 
 .project-page h1 {
@@ -370,6 +323,26 @@ footer::after {
     margin-right: 1.5rem;
 }
 
+.project-page .watermark {
+    position: absolute;
+    height: 6rem;
+    left: -10%;
+}
+
+#hbp .watermark {
+    top: 3rem;
+    min-width: 50rem;
+}
+
+#csm .watermark {
+    top: 4rem;
+    left: -5%;
+}
+
+#rainydays .watermark {
+    top: 4rem;
+}
+
 
 /* ----------------------------- Footer ----------------------------------- */
 
@@ -388,4 +361,189 @@ footer::after {
 
 footer h4 {
     padding: 2rem 0;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 700px) {
+ 
+    /* ----------------------------- Header ----------------------------------- */
+
+    header {
+        position: relative;
+    }
+
+    #navbar {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav {
+        transform: translateY(0);
+        background: transparent;
+        flex-direction: row;
+        gap: 2rem;
+        right: .5rem;
+        top: -1.3rem;
+        height: 0;
+        width: auto;
+        padding: 0;
+    }
+
+    nav button {
+        color: var(--purple);
+        width: 6rem;
+        cursor: pointer;
+    }
+
+    #hamburger {
+        display: none !important;
+    }
+
+    #close-menu {
+        display: none !important;
+    }
+
+    /* ----------------------------- Hero ----------------------------------- */
+
+    #hero__text h1 {
+        font-size: 3rem;
+        width: 25rem;
+    }
+
+    #hero__text {
+        font-size: 1.1rem;
+        top: 0;
+        left: 7%;
+    }
+
+    #hero__dots {
+        width: 12rem;
+        top: -13%;
+        left: 1%;
+    }
+
+    #hero__computer {
+        max-width: 60rem;
+    }
+
+    /* ----------------------------- About ----------------------------------- */
+
+    #about {
+        margin-top: 20rem;
+    }
+
+    #about__content {
+        max-width: 40rem;
+    }
+
+    /* ----------------------------- My Work ----------------------------------- */
+
+    #my-work {
+        max-width: 40rem;
+        margin: 10rem auto;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #index .watermark {
+        max-width: 50rem;
+        right: auto;
+        left: -5rem;
+    }
+
+    /* ----------------------------- Hero ----------------------------------- */
+
+    .hero__bracket {
+        display: block;
+        height: 12rem;
+    }
+
+    #hero__bracket1 {
+        right: 30rem;
+    }
+
+    #hero__bracket2 {
+        display: none;
+        right: -5rem;
+        bottom: -10rem;
+        transform: rotate(180deg);
+    }
+
+    #hero__computer {
+        width: 50rem;
+        right: -15%;
+        max-width: none;
+        top: 0;   
+    }
+
+    /* ----------------------------- About ----------------------------------- */
+
+    #about {
+        margin-top: 5rem;
+    }
+
+    #about__content {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 0rem;
+    }
+
+    #my-face {
+        max-width: 25rem;
+        width: 100%;
+    }
+
+    #about__text p {
+        font-size: 1.2rem;
+    }
+
+    #this-guy {
+        width: 12rem;
+        right: -10%;
+    }
+
+    /* ----------------------------- My Work ----------------------------------- */
+
+    #my-work {
+        max-width: 1200px;
+    }
+
+    .projects__card {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .projects__card img {
+        border-radius: 1rem;
+    }
+
+    .projects__card:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .projects__card__copy {
+        max-width: 35rem;
+    }
+    
+    .read-more__btn:hover {
+        background-color: var(--purple);
+        box-shadow: .3rem .3rem var(--pink);
+    }
+
+    /* ----------------------------- Project Page ----------------------------------- */
+
+    #project-page__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project__image {
+        margin-top: 5rem;
+    }
 }

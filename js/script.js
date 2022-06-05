@@ -29,12 +29,10 @@ menuBtnClose.addEventListener("click", () => {
 
 const aboutBtn = document.getElementById("about__btn");
 const workBtn = document.getElementById("work__btn");
-const skillzBtn = document.getElementById("skillz__btn");
 const logo = document.querySelector(".logo");
 
 const about = document.getElementById("about");
 const work = document.getElementById("my-work__watermark");
-const skillz = document.getElementById("my-skillz__watermark");
 
 aboutBtn.addEventListener("click", () => {
     about.scrollIntoView({ behavior: "smooth" })
@@ -43,11 +41,6 @@ aboutBtn.addEventListener("click", () => {
 
 workBtn.addEventListener("click", () => {
     work.scrollIntoView({ behavior: "smooth" })
-    hideMenu()
-})
-
-skillzBtn.addEventListener("click", () => {
-    skillz.scrollIntoView({ behavior: "smooth" })
     hideMenu()
 })
 

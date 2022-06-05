@@ -12,16 +12,15 @@
 
     <title>Espen Pedersen | Web Dev</title>
 </head>
-<body>
+<body id="index">
     <header>
         <section id="navbar">
-            <h1 class="logo">Espen Pedersen</h1>
+            <a class="logo">Espen Pedersen</a>
             <img src="./media/hamburger.svg" id="hamburger" alt="Menu icon">
             <img src="./media/hamburger__close.svg" id="close-menu" alt="Menu icon close">
             <nav>
                 <button id="about__btn">About</button>
                 <button id="work__btn">My Work</button>
-                <button id="skillz__btn">My Skillz</button>
             </nav>
         </section>
     </header>
@@ -29,8 +28,8 @@
     <main>
         <section id="hero" class="max-width">
             <div id="hero__text">
-                <h2>Lets make the web more fun <span id="orange-dot">.</span></h2>
-                <h3>Scroll down to meet Espen</h3>
+                <h1>Lets make the web more fun <span id="orange-dot">.</span></h1>
+                <h2>Scroll down to meet Espen</h2>
             </div>
             <img src="./media/hero-computer.svg" id="hero__computer" alt="Illustration of a computer and some books">
             <img src="./media/header-dots.svg" id="hero__dots" alt="Illustration of some dots in a grid">
@@ -59,56 +58,43 @@
                 <h2 class="underline">My work</h2>
                 <div id="projects">
                     <div class="projects__card">
-                        <div class="projects__card__content">                        
+                        <div>
                             <img src="./media/hpb-thumbnail.jpg" alt="Helt på Bærtur webpage overview">
+                        </div>
+                        <div class="projects__card__copy">
                             <h3>Helt På Bærtur</h3>
                             <p>This was the school exam for the first year at Noroff. The task was to create a blog about a topic of our own choosing, and give it life using HTML, CSS and JavaScript only. </p>
                             <p>I chose to make a blog about something i feel passionate about, and that is everything outdoorsy.</p>
-                            <a href="./hpb.html" class="read-more__btn">Read More</a>                        
+                            <a href="./hpb.html" class="read-more__btn">Read More</a>                                  
                         </div>
                     </div>
-                    <div class="projects__card">
-                        <div class="projects__card__content">                        
+                    <div class="projects__card">    
+                        <div>
                             <img src="./media/thcsm-thumbnail.jpg" alt="Community science museum website overview">
+                        </div>
+                        <div class="projects__card__copy">
                             <h3>Community Science Museum</h3>
                             <p>This was the final project on the first term at Noroff. We were to create the website for a museum, using HTML and CSS. </p>
                             <p>I learned alot about the foundations of web-creation during this project.</p>
-                            <a href="./csm.html" class="read-more__btn">Read More</a>
-                        </div>
+                            <a href="./csm.html" class="read-more__btn">Read More</a>                                
+                        </div>              
                     </div>
                     <div class="projects__card">
-                        <div class="projects__card__content">                        
+                        <div>
                             <img src="./media/rainydays-thumbnail.jpg" alt="RainyDays website overview">
+                        </div>
+                        <div class="projects__card__copy">
                             <h3>RainyDays</h3>
                             <p>An online store, specialized in selling high quality rain jackets. This was the first big project at Noroff. I learned alot in regards to design during this project. </p>
                             <p>This is where the journey began!</p>
-                            <a href="./rainydays.html" class="read-more__btn">Read More</a>
+                            <a href="./rainydays.html" class="read-more__btn">Read More</a>                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="my-skillz" class="max-width">
-            <h2 class="underline">My Skillz</h2>
-            <img src="./media/my-skillz.svg" 
-           id="my-skillz__watermark" class="watermark" alt="My skillz type watermark">
-            <div class="skillz-card">
-                <h3 class="underline">Front-end Development</h3>
-                <h4>HTML</h4>
-                <h4>CSS</h4>
-                <h4>JavaScript</h4>
-                <h4>WordPress</h4>
-                <img src="./media/skillz-card-front-end.svg" class="skillz-card__watermark" alt="HTML logo">
-            </div>
-            <div class="skillz-card">
-                <h3 class="underline">UI/ UX</h3>
-                <h4>Figma</h4>
-                <h4>PhotoShop</h4>
-                <h4>Adobe XD</h4>
-                <img src="./media/skillz-card-ui.svg" class="skillz-card__watermark" alt="PhotoShop logo">
-            </div>
-        </section>
+
     </main>
 
     <footer>
