@@ -341,6 +341,7 @@ footer::after {
 
 #rainydays .watermark {
     top: 4rem;
+    left: -2%;
 }
 
 
@@ -444,6 +445,20 @@ footer h4 {
         margin: 10rem auto;
     }
 
+    /* ----------------------------- Project Page ----------------------------------- */
+
+    #rainydays .watermark {
+        left: 0;
+    }
+
+    #hbp .watermark {
+        left: 0;
+    }
+    
+    #csm .watermark {
+        left: 0;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
@@ -544,6 +559,6 @@ footer h4 {
     }
 
     .project__image {
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
 }
