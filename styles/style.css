@@ -103,7 +103,7 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 40rem;
+    height: 30rem;
     padding: 5rem 0;
     z-index: 1;
 }
@@ -268,7 +268,7 @@ footer::after {
     width: 100%;
 }
 
-.read-more__btn {
+.readMore {
     background-color: var(--pink);
     color: var(--white);
     border: none;
@@ -279,11 +279,12 @@ footer::after {
     box-shadow: .3rem .3rem var(--purple);
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
     transition: .3s;
 }
 
 /* ----------------------------- Project Page ----------------------------------- */
-
+/* 
 .project-page main {
     position: relative;
 }
@@ -294,7 +295,7 @@ footer::after {
 }
 
 .project-page__copy {
-    margin: 4rem 0;
+    margin: 4rem 0 2rem;
     font-size: 1.1rem;
     max-width: 35rem;
 }
@@ -313,10 +314,6 @@ footer::after {
 
 .project-page li {
     margin: 0 2rem 3rem 0 ;
-}
-
-.icons {
-    margin: 3rem 0;
 }
 
 .icons > * {
@@ -342,7 +339,7 @@ footer::after {
 #rainydays .watermark {
     top: 4rem;
     left: -2%;
-}
+} */
 
 
 /* ----------------------------- Footer ----------------------------------- */
@@ -445,19 +442,86 @@ footer h4 {
         margin: 10rem auto;
     }
 
+    /* ----------------------------- Modal ------------------------------------------ */
+
+    #modal-container {
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: all .5s;
+        z-index: 99;
+    }
+
+    #modal-content {
+        background: var(--white);
+        height: 90%;
+        width: 70%;
+        max-width: 800px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem;
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+
+    .modal-text {
+        margin-top: 2rem;
+    }
+
+    #modal-content h1 {
+        position: relative;
+    }
+
+    #modal-container ul {
+        position: absolute;
+        bottom: 0;
+        list-style-type: none;
+        font-weight: 800;
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+
+    #close-modal {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+
+    .icons {
+        display: flex;
+        gap: 1rem;
+        position: absolute;
+        bottom: 1.5rem;
+        right: 2rem;
+    }
+
+    #close-modal img {
+        width: 1.5rem;
+    }
+
     /* ----------------------------- Project Page ----------------------------------- */
 
-    #rainydays .watermark {
-        left: 0;
+    /* #rainydays .watermark {
+        left: -0.5rem;
     }
 
     #hbp .watermark {
-        left: 0;
+        left: -0.5rem;
     }
     
     #csm .watermark {
-        left: 0;
-    }
+        left: -0.5rem;
+    } */
 
 }
 
@@ -553,12 +617,12 @@ footer h4 {
 
     /* ----------------------------- Project Page ----------------------------------- */
 
-    #project-page__content {
+    /* #project-page__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .project__image {
         margin-top: 10rem;
-    }
+    } */
 }
