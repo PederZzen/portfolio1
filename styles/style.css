@@ -283,65 +283,6 @@ footer::after {
     transition: .3s;
 }
 
-/* ----------------------------- Project Page ----------------------------------- */
-/* 
-.project-page main {
-    position: relative;
-}
-
-.project-page h1 {
-    position: relative;
-    margin-top: 5rem;
-}
-
-.project-page__copy {
-    margin: 4rem 0 2rem;
-    font-size: 1.1rem;
-    max-width: 35rem;
-}
-
-.project__image {
-    width: 100%;
-    border-radius: 1rem;
-}
-
-.project-page ul {
-    display: flex;
-    list-style-type: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.project-page li {
-    margin: 0 2rem 3rem 0 ;
-}
-
-.icons > * {
-    margin-right: 1.5rem;
-}
-
-.project-page .watermark {
-    position: absolute;
-    height: 6rem;
-    left: -10%;
-}
-
-#hbp .watermark {
-    top: 3rem;
-    min-width: 50rem;
-}
-
-#csm .watermark {
-    top: 4rem;
-    left: -5%;
-}
-
-#rainydays .watermark {
-    top: 4rem;
-    left: -2%;
-} */
-
-
 /* ----------------------------- Footer ----------------------------------- */
 
 footer {
@@ -451,8 +392,14 @@ footer h4 {
         top: 0;
         width: 100%;
         height: 100%;
-        transition: all .5s;
         z-index: 99;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @keyframes zoom {
+        from { transform: scale(0); }
+        to { transform: scale(1); }
     }
 
     #modal-content {
@@ -461,12 +408,11 @@ footer h4 {
         width: 70%;
         max-width: 800px;
         position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         padding: 2rem;
         overflow: hidden;
         border-radius: 1rem;
+
+        animation: zoom .3s;
     }
 
     .modal-text {
@@ -508,20 +454,6 @@ footer h4 {
     #close-modal img {
         width: 1.5rem;
     }
-
-    /* ----------------------------- Project Page ----------------------------------- */
-
-    /* #rainydays .watermark {
-        left: -0.5rem;
-    }
-
-    #hbp .watermark {
-        left: -0.5rem;
-    }
-    
-    #csm .watermark {
-        left: -0.5rem;
-    } */
 
 }
 
@@ -610,19 +542,8 @@ footer h4 {
         max-width: 35rem;
     }
     
-    .read-more__btn:hover {
+    .readMore:hover {
         background-color: var(--purple);
         box-shadow: .3rem .3rem var(--pink);
     }
-
-    /* ----------------------------- Project Page ----------------------------------- */
-
-    /* #project-page__content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project__image {
-        margin-top: 10rem;
-    } */
 }

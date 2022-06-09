@@ -67,7 +67,7 @@ readMore.forEach((btn) => {
     btn.addEventListener("click", () => {
         console.log(btn);
 
-        modalContainer.style.display = "block";
+        modalContainer.style.display = "flex";
 
         if (btn.classList.contains("show-hpb")) {
             modalContent.innerHTML = `
@@ -97,7 +97,7 @@ readMore.forEach((btn) => {
                 <h1 class="underline">Community Science Museum</h1>
                 <div class="modal-text">
                     <p>This was the final project on the first term at Noroff. We were to create the website for a museum, using HTML and CSS. I learned alot about the foundations of web-creation during this project.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius a tenetur exercitationem tempore atque veniam esse beatae suscipit, eos quasi sit sapiente repellat porro quis voluptatibus non? Ad quae rerum quod non quo dolores molestiae est vitae tempora vero!</p>
+                    <p></p>
                 </div>        
                 <ul>
                     <li>HTML</li>
