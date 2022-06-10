@@ -180,7 +180,7 @@ nav button {
     left: 2%;
 }
 
-.hero__bracket {
+.bracket {
     display: none;
 }
 
@@ -189,12 +189,11 @@ nav button {
 #about {
     background: var(--purple);
     margin-top: 10rem;
-    position: relative;
+    position: relative; 
 }
 
 #about::before,
-#about::after,
-footer::after {
+#about::after{
     content: '';
     background: var(--purple);
     opacity: .8;
@@ -209,6 +208,8 @@ footer::after {
 
 #about__content {
     padding: 5rem .5rem;
+    z-index: 2;
+    position: relative;
 }
 
 #about__text {
@@ -245,12 +246,23 @@ footer::after {
 /* ----------------------------- My Work ----------------------------------- */
 
 #my-work {
-    margin-top: 18rem;
     position: relative;
+}
+
+.bubble {
+    display: none;
 }
 
 .projects__card {
     margin-bottom: 5rem;
+}
+
+.projects__card h2 {
+    margin: 0;
+    color: var(--orange);
+    font-size: .9rem;
+    letter-spacing: .3rem;
+    margin-top: 2rem;
 }
 
 .projects__card p {
@@ -259,7 +271,6 @@ footer::after {
 }
 
 .projects__card h3 {
-    margin-top: 1.5rem;
     font-size: 1.5rem;
     color: var(--purple);
 }
@@ -283,26 +294,112 @@ footer::after {
     transition: .3s;
 }
 
+#get-in-touch {
+    margin: 0 1rem;
+    max-width: 80%;
+}
+
+
+/* ----------------------------- Modal ------------------------------------------ */
+
+#modal-container {
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes zoom {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+#modal-content {
+    background: var(--white);
+    height: 95%;
+    width: 95%;
+    position: relative;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    animation: zoom .3s;
+}
+
+.modal-text {
+    margin-top: 2rem;
+}
+
+#modal-content h1 {
+    position: relative;
+    max-width: 60%;
+}
+
+#modal-container ul {
+
+    list-style-type: none;
+    font-weight: 800;
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+
+#close-modal {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 1.6rem;
+}
+
+#close-modal img {
+    width: 1.5rem;
+}
+
 /* ----------------------------- Footer ----------------------------------- */
 
 footer {
-    background-color: var(--purple);
     color: var(--orange);
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
     position: relative;
+    z-index: 1;
 }
 
-footer::after {
-    top: -2rem;
+.footer__background {
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: top;
     left: 0;
+    bottom: 0;
 }
 
 footer h4 {
     padding: 2rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* Desktop */
+/* Tablet */
 
 @media only screen and (min-width: 700px) {
  
@@ -383,79 +480,37 @@ footer h4 {
         margin: 10rem auto;
     }
 
-    /* ----------------------------- Modal ------------------------------------------ */
-
-    #modal-container {
-        background: rgba(0, 0, 0, 0.8);
-        display: none;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 99;
-        align-items: center;
-        justify-content: center;
-    }
-
-    @keyframes zoom {
-        from { transform: scale(0); }
-        to { transform: scale(1); }
-    }
+    /* ----------------------------- Modal -------------------------------------- */
 
     #modal-content {
-        background: var(--white);
         height: 90%;
         width: 70%;
         max-width: 800px;
-        position: relative;
-        padding: 2rem;
-        overflow: hidden;
-        border-radius: 1rem;
-
-        animation: zoom .3s;
-    }
-
-    .modal-text {
-        margin-top: 2rem;
-    }
-
-    #modal-content h1 {
-        position: relative;
     }
 
     #modal-container ul {
         position: absolute;
         bottom: 0;
-        list-style-type: none;
-        font-weight: 800;
-        display: flex;
-        gap: 2rem;
-        margin: 2rem 0;
-    }
-
-
-    #close-modal {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        cursor: pointer;
-        background: transparent;
-        border: none;
     }
 
     .icons {
-        display: flex;
-        gap: 1rem;
         position: absolute;
         bottom: 1.5rem;
         right: 2rem;
     }
 
-    #close-modal img {
-        width: 1.5rem;
+    /* ----------------------------- Footer -------------------------------------- */
+
+    #footer {
+        margin-top: auto;
     }
 
+    #footer__background {
+        max-height: 12rem;
+    }
 }
+
+/* Desktop */
 
 @media only screen and (min-width: 1000px) {
 
@@ -465,22 +520,15 @@ footer h4 {
         left: -5rem;
     }
 
-    /* ----------------------------- Hero ----------------------------------- */
+    /* ----------------------------- Hero ---------------------------------------- */
 
-    .hero__bracket {
+    .bracket {
         display: block;
         height: 12rem;
     }
 
-    #hero__bracket1 {
+    #bracket1 {
         right: 30rem;
-    }
-
-    #hero__bracket2 {
-        display: none;
-        right: -5rem;
-        bottom: -10rem;
-        transform: rotate(180deg);
     }
 
     #hero__computer {
@@ -501,12 +549,17 @@ footer h4 {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: center;
         gap: 0rem;
     }
 
     #my-face {
         max-width: 25rem;
         width: 100%;
+    }
+
+    #about__text {
+        margin: auto;
     }
 
     #about__text p {
@@ -524,8 +577,29 @@ footer h4 {
         max-width: 1200px;
     }
 
+    .bubble {
+        display: block;
+        position: absolute;
+    }
+
+    #purple__bubble {
+        right: 0;
+        top: -14rem;
+    }
+
+    #orange__bubble {
+        right: -4rem;
+        top: -7rem;
+    }
+
+    #pink__bubble {
+        left: -4rem;
+        top: 40rem;
+    }
+
     .projects__card {
         display: flex;
+        align-items: center;
         flex-direction: row;
         gap: 4rem;
     }

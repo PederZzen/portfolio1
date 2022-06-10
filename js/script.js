@@ -96,8 +96,9 @@ readMore.forEach((btn) => {
             <div>
                 <h1 class="underline">Community Science Museum</h1>
                 <div class="modal-text">
-                    <p>This was the final project on the first term at Noroff. We were to create the website for a museum, using HTML and CSS. I learned alot about the foundations of web-creation during this project.</p>
-                    <p></p>
+                    <p>This was the final project on the first term at Noroff. We were to create a website for a museum where the target group was young people in the age 7 to 15 years old, and families with kids. The site should not be "childish" though, as it were implied that they had a pretty intelligent crowd at the museum.</p>
+                    <p>The website were to be built with HTML and CSS only, and the design had to be of our own creation. I used Figma to make the design, which is a great tool i know very well by now. Also we had to create and use a Gantt chart, and a trello board to plan our process ahead.</p>
+                    <p>I learned alot about the foundations of web-creation during this project.</p>
                 </div>        
                 <ul>
                     <li>HTML</li>
@@ -115,8 +116,9 @@ readMore.forEach((btn) => {
             <div>
                 <h1 class="underline">RainyDays</h1>
                 <div class="modal-text">
-                    <p>An online store, specialized in selling high quality rain jackets. This was the first big project at Noroff. I learned alot in regards to design during this project. This is where the journey began!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius a tenetur exercitationem tempore atque veniam esse beatae suscipit, eos quasi sit sapiente repellat porro quis voluptatibus non? Ad quae rerum quod non quo dolores molestiae est vitae tempora vero!</p>
+                    <p>An online store, specialized in selling high quality rain jackets. This was the first big project at Noroff, were we had to use all our knowledge we had learned thus far. The process started as always in Figma, were the design was given life.</p>
+                    <p>This was the first website i made, so it is a bit rough around the edges. But everything works and it is responsive on most screen sizes.</p>
+                    <p>As our JavaScript journey had not yet began, the website became pretty static and lifeless. If i were to make it again, this would have made a big change in the general feel of the page.</p>
                 </div>        
                 <ul>
                     <li>HTML</li>
