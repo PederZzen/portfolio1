@@ -208,7 +208,6 @@ nav button {
 
 #about__content {
     padding: 5rem .5rem;
-    z-index: 2;
     position: relative;
 }
 
@@ -247,6 +246,7 @@ nav button {
 
 #my-work {
     position: relative;
+    margin: 10rem auto;
 }
 
 .bubble {
@@ -584,7 +584,6 @@ footer h4 {
     .bubble {
         display: block;
         position: absolute;
-        z-index: 1;
     }
 
     #purple__bubble {
