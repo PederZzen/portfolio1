@@ -577,6 +577,10 @@ footer h4 {
         max-width: 1200px;
     }
 
+    #my-work h2 {
+        margin-top: auto;
+    }
+
     .bubble {
         display: block;
         position: absolute;
