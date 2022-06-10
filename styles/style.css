@@ -584,6 +584,7 @@ footer h4 {
     .bubble {
         display: block;
         position: absolute;
+        z-index: 1;
     }
 
     #purple__bubble {
